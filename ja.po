@@ -1,0 +1,499 @@
+# BlogWriter message file.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Yasuhiro Matsumoto <mattn_jp@hotmail.com>, 2006.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-03-12 17:30+0900\n"
+"PO-Revision-Date: 2006-07-28 19:56+0900\n"
+"Last-Translator: Yasuhiro Matsumoto <mattn_jp@hotmail.com>\n"
+"Language-Team: Yasuhiro Matsumoto <mattn_jp@hotmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: utf-8\n"
+
+#: BlogWriter.cpp:534
+msgid "File Select..."
+msgstr "ファイル選択"
+
+#: BlogWriter.cpp:548 BlogWriter.cpp:5641
+msgid "Any File"
+msgstr "すべてのファイル"
+
+#: BlogWriter.cpp:851 BlogWriter.cpp:906
+msgid "Can't upload file:"
+msgstr "ファイルをアップロード出来ません:"
+
+#: BlogWriter.cpp:2033 BlogWriter.cpp:2083
+msgid "Can't update entry"
+msgstr "記事を更新出来ません"
+
+#: BlogWriter.cpp:2035 BlogWriter.cpp:2099
+msgid "Can't create entry"
+msgstr "記事をポスト出来ません"
+
+#: BlogWriter.cpp:2163
+msgid "Can't post entry:"
+msgstr "記事をポスト出来ません:"
+
+#: BlogWriter.cpp:2180
+msgid "Can't publish entry:"
+msgstr "記事を公開出来ません:"
+
+#: BlogWriter.cpp:2203
+msgid "Can't set categroy:"
+msgstr "カテゴリが設定出来ません:"
+
+#: BlogWriter.cpp:2228
+msgid "Title is empty"
+msgstr "タイトルが未入力です"
+
+#: BlogWriter.cpp:2234
+msgid "Category is not selected"
+msgstr "カテゴリが未選択です"
+
+#: BlogWriter.cpp:2248 BlogWriter.cpp:2267
+msgid "Body is empty"
+msgstr "本文が未入力です"
+
+#: BlogWriter.cpp:2287
+msgid "Publishing Post..."
+msgstr "記事を投稿しています..."
+
+#: BlogWriter.cpp:2402
+#, c-format
+msgid "Open Movie %s"
+msgstr "動画 %s を開く"
+
+#: BlogWriter.cpp:2419
+#, c-format
+msgid "Open URL %s"
+msgstr "URL %s を開く"
+
+#: BlogWriter.cpp:2712 BlogWriter.cpp:5715
+msgid "Image File"
+msgstr "画像ファイル"
+
+#: BlogWriter.cpp:2739
+msgid "_Add"
+msgstr "追加(_A)"
+
+#: BlogWriter.cpp:2743
+msgid "Image"
+msgstr "画像"
+
+#: BlogWriter.cpp:2745
+msgid "Link"
+msgstr "リンク"
+
+#: BlogWriter.cpp:2751 BlogWriter.cpp:6090
+msgid "_Title:"
+msgstr "タイトル(_T):"
+
+#: BlogWriter.cpp:2769 BlogWriter.cpp:4218
+msgid "_URL:"
+msgstr "URL(_U):"
+
+#: BlogWriter.cpp:2788
+msgid "_Select"
+msgstr "選択(_S)"
+
+#: BlogWriter.cpp:3251
+msgid "_Insert"
+msgstr "挿入(_I)"
+
+#: BlogWriter.cpp:3254
+msgid "Embed Object"
+msgstr "埋め込みオブジェクト"
+
+#: BlogWriter.cpp:3374 BlogWriter.cpp:3424
+msgid "Can't fetch category list:"
+msgstr "カテゴリリストが取得出来ません:"
+
+#: BlogWriter.cpp:3756 BlogWriter.cpp:3845 BlogWriter.cpp:4383
+msgid "_New"
+msgstr "作成(_N)"
+
+#: BlogWriter.cpp:3759
+msgid "New Profile"
+msgstr "新規プロファイル"
+
+#: BlogWriter.cpp:3765 BlogWriter.cpp:3854 BlogWriter.cpp:4186
+msgid "_Profile:"
+msgstr "プロファイル(_P):"
+
+#: BlogWriter.cpp:3793 BlogWriter.cpp:3882
+msgid "Can't accept some letter for profile name."
+msgstr "プロファイル名に許されない文字が存在します。"
+
+#: BlogWriter.cpp:3818 BlogWriter.cpp:3911
+msgid "This profile already used."
+msgstr "このプロファイルは既に使用されています。"
+
+#: BlogWriter.cpp:3848
+msgid "Copy Profile"
+msgstr "複写プロファイル"
+
+#: BlogWriter.cpp:3925
+msgid "Are you sure to delete this profile?"
+msgstr "このプロファイルを削除しますか？"
+
+#: BlogWriter.cpp:4010
+msgid "You are editing, are you sure?"
+msgstr "編集されています。よろしいですか？"
+
+#: BlogWriter.cpp:4141
+msgid "Detecting server information..."
+msgstr "サーバの情報を検出中..."
+
+#: BlogWriter.cpp:4176 BlogWriter.cpp:4539 BlogWriter.cpp:5559
+msgid "_Update"
+msgstr "更新(_U)"
+
+#: BlogWriter.cpp:4179
+msgid "Profile Settings"
+msgstr "プロファイル設定"
+
+#: BlogWriter.cpp:4236
+msgid "_Detect"
+msgstr "検出(_D)"
+
+#: BlogWriter.cpp:4240 BlogWriter.cpp:4241
+msgid "Detect blog url and entry point from this server."
+msgstr "このサーバからブログURLとエントリポイントを検出します。"
+
+#: BlogWriter.cpp:4251
+msgid "_Engine:"
+msgstr "エンジン(_E)"
+
+#: BlogWriter.cpp:4275
+msgid "_Server:"
+msgstr "サーバ(_S):"
+
+#: BlogWriter.cpp:4294
+msgid "User _Id:"
+msgstr "ユーザID(_I):"
+
+#: BlogWriter.cpp:4313
+msgid "_Password:"
+msgstr "パスワード(_P):"
+
+#: BlogWriter.cpp:4333
+msgid "_Blog ID:"
+msgstr "ブログID(_B):"
+
+#: BlogWriter.cpp:4352
+msgid "_Format:"
+msgstr "フォーマット(_F):"
+
+#: BlogWriter.cpp:4387 BlogWriter.cpp:4388
+msgid "If you want to create new profile, click 'New' button."
+msgstr "新しいプロファイルを作成する場合は、'作成'をクリックします。"
+
+#: BlogWriter.cpp:4393
+msgid "_Copy"
+msgstr "複写(_C)"
+
+#: BlogWriter.cpp:4397 BlogWriter.cpp:4398
+msgid "If you want to copy this profile, click 'Copy' button."
+msgstr "このプロファイルを複写する場合は、'複写'をクリックします。"
+
+#: BlogWriter.cpp:4403 BlogWriter.cpp:5569
+msgid "_Delete"
+msgstr "削除(_D)"
+
+#: BlogWriter.cpp:4407 BlogWriter.cpp:4408
+msgid "If you want to delete this profile, click 'Delete' button."
+msgstr "このプロファイルを削除する場合は、'削除'をクリックします。"
+
+#: BlogWriter.cpp:4413
+msgid "NOTE) If you selected another profile, editing value won't save."
+msgstr "注意) 他のプロファイルを選択すると、編集中の値は更新されません。"
+
+#: BlogWriter.cpp:4476 BlogWriter.cpp:4486
+msgid "Updating profile..."
+msgstr "プロファイルを更新しています..."
+
+#: BlogWriter.cpp:4520 BlogWriter.cpp:4526
+msgid "FFmpeg Command:"
+msgstr "FFMpegコマンド:"
+
+#: BlogWriter.cpp:4521 BlogWriter.cpp:4527
+msgid "WWW Browser Command:"
+msgstr "WWWブラウザコマンド:"
+
+#: BlogWriter.cpp:4522 BlogWriter.cpp:4528
+msgid "Movie Player Command:"
+msgstr "動画プレイヤコマンド:"
+
+#: BlogWriter.cpp:4523 BlogWriter.cpp:4529
+msgid "Editor Font:"
+msgstr "エディタフォント:"
+
+#: BlogWriter.cpp:4542
+msgid "Configuration"
+msgstr "設定"
+
+#: BlogWriter.cpp:4601
+msgid "_Reset"
+msgstr "リセット(_R)"
+
+#: BlogWriter.cpp:4605 BlogWriter.cpp:4606
+msgid "Reset all configuration."
+msgstr "全ての設定項目をリセットします。"
+
+#: BlogWriter.cpp:4679
+#, fuzzy
+msgid "Entry File"
+msgstr "すべてのファイル"
+
+#: BlogWriter.cpp:4752
+msgid "XML File"
+msgstr "XMLファイル"
+
+#: BlogWriter.cpp:4839
+msgid "Can't get recent posts:"
+msgstr "過去記事一覧が取得出来ません:"
+
+#: BlogWriter.cpp:4968
+msgid "Updating recent posts..."
+msgstr "過去記事一覧を更新しています..."
+
+#: BlogWriter.cpp:5018 BlogWriter.cpp:5060 BlogWriter.cpp:5085
+msgid "Can't delete post:"
+msgstr "記事が削除出来ません:"
+
+#: BlogWriter.cpp:5094
+msgid "Are you sure to delete this post?"
+msgstr "この記事を削除しますか？"
+
+#: BlogWriter.cpp:5097
+msgid "Deleting recent post..."
+msgstr "過去記事を削除しています..."
+
+#: BlogWriter.cpp:5279 BlogWriter.cpp:5353 BlogWriter.cpp:5375
+msgid "Can't get recent post:"
+msgstr "過去記事が取得出来ません:"
+
+#: BlogWriter.cpp:5443
+msgid "Getting recent post..."
+msgstr "過去記事を取得しています..."
+
+#: BlogWriter.cpp:5492
+msgid "Recent Posts"
+msgstr "過去記事"
+
+#: BlogWriter.cpp:5520
+msgid "Date"
+msgstr "日付"
+
+#: BlogWriter.cpp:5529
+msgid "Title"
+msgstr "タイトル"
+
+#: BlogWriter.cpp:5538
+msgid "Description"
+msgstr "本文"
+
+#: BlogWriter.cpp:5563 BlogWriter.cpp:5564
+msgid "Update this list."
+msgstr "リストを更新します。"
+
+#: BlogWriter.cpp:5573 BlogWriter.cpp:5574
+msgid "Delete selected post."
+msgstr "選択している記事を削除します。"
+
+#: BlogWriter.cpp:5579
+msgid "_Get"
+msgstr "取得(_G)"
+
+#: BlogWriter.cpp:5583 BlogWriter.cpp:5584
+msgid "Edit selected post."
+msgstr "選択している記事を修正します。"
+
+#: BlogWriter.cpp:5649
+msgid "Uploading file to server..."
+msgstr "サーバにファイルをアップロード中..."
+
+#: BlogWriter.cpp:5677
+msgid "If \"Success\", click \"OK\"."
+msgstr "\"Success\"と表示されたら、\"OK\"をクリックして下さい。"
+
+#: BlogWriter.cpp:5692 BlogWriter.cpp:5711
+msgid "failed to authenticate for flickr."
+msgstr "flickrに認証が失敗しました。"
+
+#: BlogWriter.cpp:5702
+msgid "Failed to upload image to flickr."
+msgstr "flickrへの画像アップロードに失敗しました。"
+
+#: BlogWriter.cpp:5725
+msgid "Uploading image to flickr..."
+msgstr "flickrに画像をアップロード中..."
+
+#: BlogWriter.cpp:5850
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: BlogWriter.cpp:5854
+msgid "_New Entry"
+msgstr "新しいエントリ(_N)"
+
+#: BlogWriter.cpp:5863
+msgid "_Recent Posts"
+msgstr "過去記事(_R)"
+
+#: BlogWriter.cpp:5872
+msgid "_Profile Settings"
+msgstr "プロファイル設定(_P)"
+
+#: BlogWriter.cpp:5877
+msgid "_Update Profile"
+msgstr "プロファイル更新(_U):"
+
+#: BlogWriter.cpp:5882
+msgid "_View Blog"
+msgstr "ブログを閲覧する(_V)"
+
+#: BlogWriter.cpp:5891
+msgid "_Load Blog"
+msgstr "ブログを読み込む(_L)"
+
+#: BlogWriter.cpp:5897
+msgid "_Save Blog"
+msgstr "ブログを保存する(_S)"
+
+#: BlogWriter.cpp:5906
+msgid "_Configuration"
+msgstr "設定(_C)"
+
+#: BlogWriter.cpp:5914
+msgid "E_xit"
+msgstr "終了(_X)"
+
+#: BlogWriter.cpp:5922
+msgid "_Edit"
+msgstr "編集(_E)"
+
+#: BlogWriter.cpp:5926
+msgid "_Undo"
+msgstr "元に戻す(_U)"
+
+#: BlogWriter.cpp:5932
+msgid "_Redo"
+msgstr "やり直し(_R)"
+
+#: BlogWriter.cpp:5941
+msgid "_Bold"
+msgstr "太字(_B)"
+
+#: BlogWriter.cpp:5947
+msgid "_Italic"
+msgstr "斜字(_I)"
+
+#: BlogWriter.cpp:5953
+msgid "Stri_ke"
+msgstr "打消(_K)"
+
+#: BlogWriter.cpp:5959
+msgid "_Underline"
+msgstr "下線(_U)"
+
+#: BlogWriter.cpp:5965
+msgid "_Link"
+msgstr "リンク(_L)"
+
+#: BlogWriter.cpp:5971
+msgid "Ima_ge"
+msgstr "画像(_G)"
+
+#: BlogWriter.cpp:5980
+msgid "Header _1"
+msgstr "見出し大(_1)"
+
+#: BlogWriter.cpp:5986
+msgid "Header _2"
+msgstr "見出し中(_2)"
+
+#: BlogWriter.cpp:5992
+msgid "Header _3"
+msgstr "見出し小(_3)"
+
+#: BlogWriter.cpp:6001
+msgid "_Pre"
+msgstr "整形済みテキスト(_P)"
+
+#: BlogWriter.cpp:6007
+msgid "Block_quote"
+msgstr "引用(_Q)"
+
+#: BlogWriter.cpp:6013
+msgid "Align Left"
+msgstr "左寄せ"
+
+#: BlogWriter.cpp:6018
+msgid "Align Center"
+msgstr "中寄せ"
+
+#: BlogWriter.cpp:6023
+msgid "Align Right"
+msgstr "右寄せ"
+
+#: BlogWriter.cpp:6031
+msgid "_Embed Object"
+msgstr "埋め込みオブジェクト(_E)"
+
+#: BlogWriter.cpp:6040
+msgid "_Tool"
+msgstr "ツール(_T)"
+
+#: BlogWriter.cpp:6044
+msgid "_Upload file to server"
+msgstr "サーバにファイルをアップロード(_U)"
+
+#: BlogWriter.cpp:6049
+msgid "Upload image to _flickr"
+msgstr "flickrに画像をアップロード(_F)"
+
+#: BlogWriter.cpp:6054
+msgid "Authenticate for flickr"
+msgstr "flickr認証"
+
+#: BlogWriter.cpp:6062
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: BlogWriter.cpp:6067
+msgid "_About..."
+msgstr "このソフトウェアについて...(_A)"
+
+#: BlogWriter.cpp:6073
+msgid "_Debug"
+msgstr "デバッグ(_D)"
+
+#: BlogWriter.cpp:6101 BlogWriter.cpp:6102
+msgid "Title of this article"
+msgstr "この記事のタイトルを入力します"
+
+#: BlogWriter.cpp:6112
+msgid "_Category:"
+msgstr "カテゴリ(_C)"
+
+#: BlogWriter.cpp:6125 BlogWriter.cpp:6126
+msgid "Category of this article"
+msgstr "この記事のカテゴリを入力します"
+
+#: BlogWriter.cpp:6242 BlogWriter.cpp:6243
+msgid "etc"
+msgstr "その他"
+
+#: BlogWriter.cpp:6270
+msgid "_Publish"
+msgstr "公開(_P)"
+
+#: BlogWriter.cpp:6274 BlogWriter.cpp:6275
+msgid "Publish this article"
+msgstr "この記事を投稿します"
