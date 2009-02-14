@@ -16,6 +16,7 @@
 #include <curl/curl.h>
 #include <errno.h>
 #endif
+#include <string.h>
 #include <sys/stat.h>
 #include <time.h>
 
@@ -588,7 +589,7 @@ static std::string get_nonce()
 	if (!bInitialized)
 		srand((unsigned int)time(NULL));
 	char szBuf[256];
-	sprintf(szBuf, "%d %d", time(NULL), rand());
+	sprintf(szBuf, "%d %d", (int)time(NULL), (int)rand());
 	return StringToHex(sha1(szBuf));
 }
 

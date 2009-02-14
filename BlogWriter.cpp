@@ -166,8 +166,8 @@ gint link_num = 0;
 
 typedef struct {
 	int index;
-	char* description;
-	char* value;
+	const char* description;
+	const char* value;
 } combo_entry_data;
 combo_entry_data engine_entry[] = {
 	{ 0, "XML Remote Procedure Call",	"xmlrpc" },
@@ -188,10 +188,10 @@ typedef enum {
 } setting_check_type;
 
 typedef struct {
-	char* label;
-	char* key;
+	const char* label;
+	const char* key;
 	setting_check_type type;
-	char* default_value;
+	const char* default_value;
 	GtkWidget* widget;
 } setting_table_def;
 
@@ -578,7 +578,7 @@ void error_dialog(GtkWidget* widget, std::string message, std::string iconfile =
 			(GtkDialogFlags)(GTK_DIALOG_MODAL),
 			GTK_MESSAGE_WARNING,
 			GTK_BUTTONS_CLOSE,
-			message.c_str());
+			message.c_str(), NULL);
 	if (iconfile.size()) {
 		GtkWidget* image = gtk_image_new_from_file(iconfile.c_str());
 		if (image) {
@@ -612,7 +612,7 @@ bool confirm_dialog(GtkWidget* widget, std::string message, std::string iconfile
 			(GtkDialogFlags)(GTK_DIALOG_MODAL),
 			GTK_MESSAGE_QUESTION,
 			GTK_BUTTONS_YES_NO,
-			message.c_str());
+			message.c_str(), NULL);
 	if (iconfile.size()) {
 		GtkWidget* image = gtk_image_new_from_file(iconfile.c_str());
 		if (image) {
@@ -647,7 +647,7 @@ bool message_dialog(GtkWidget* widget, std::string message, std::string iconfile
 			(GtkDialogFlags)(GTK_DIALOG_MODAL),
 			GTK_MESSAGE_INFO,
 			GTK_BUTTONS_OK,
-			message.c_str());
+			message.c_str(), NULL);
 	if (iconfile.size()) {
 		GtkWidget* image = gtk_image_new_from_file(iconfile.c_str());
 		if (image) {
@@ -2003,7 +2003,7 @@ bool post_blog_ftpup(
 	} else {
 		time_t tim;
 		time(&tim);
-		sprintf(fname, "%d.txt", tim);
+		sprintf(fname, "%d.txt", (int)tim);
 	}
 	
 	CategoryList::iterator it;
@@ -2216,7 +2216,7 @@ gpointer publish_post_thread(gpointer data)
 	char fname[256];
 	time_t tim;
 	time(&tim);
-	sprintf(fname, "%d", tim);
+	sprintf(fname, "%d", (int)tim);
 
 	GtkWidget* blog_title = (GtkWidget*)g_object_get_data(G_OBJECT(toplevel), "title");
 	GtkWidget* blog_category = (GtkWidget*)g_object_get_data(G_OBJECT(toplevel), "category");
@@ -2229,7 +2229,7 @@ gpointer publish_post_thread(gpointer data)
 	}
 	gchar* category_text = (gchar*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(blog_category));
 	if (!category_text && current_category_list.size() == 0)
-		category_text = "";
+		category_text = (gchar*)"";
 	else if (!category_text || !strlen(category_text)) {
 		return g_strdup(_("Category is not selected"));
 	}
@@ -4455,12 +4455,12 @@ void on_menu_profile_settings(GtkWidget* widget, gpointer user_data)
 	if (gtk_dialog_run(GTK_DIALOG(dialog)) == GTK_RESPONSE_ACCEPT) {
 		gchar* profile_text = (gchar*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(profile));
 		gchar* blogurl_text = (gchar*)gtk_entry_get_text(GTK_ENTRY(blogurl));
-		gchar* engine_text = engine_entry[gtk_combo_box_get_active(GTK_COMBO_BOX(engine))].value;
+		gchar* engine_text = (gchar*)engine_entry[gtk_combo_box_get_active(GTK_COMBO_BOX(engine))].value;
 		gchar* server_text = (gchar*)gtk_entry_get_text(GTK_ENTRY(server));
 		gchar* userid_text = (gchar*)gtk_entry_get_text(GTK_ENTRY(userid));
 		gchar* passwd_text = (gchar*)gtk_entry_get_text(GTK_ENTRY(passwd));
 		gchar* blogid_text = (gchar*)gtk_entry_get_text(GTK_ENTRY(blogid));
-		gchar* format_text = format_entry[gtk_combo_box_get_active(GTK_COMBO_BOX(format))].value;
+		gchar* format_text = (gchar*)format_entry[gtk_combo_box_get_active(GTK_COMBO_BOX(format))].value;
 		if (user_profile != profile_text) {
 			user_profile = profile_text;
 			on_menu_new_entry(NULL, NULL);
@@ -4763,7 +4763,7 @@ void on_menu_saveblog(GtkWidget* widget, gpointer user_data)
 	gchar* ptr;
 
 	time(&tim);
-	sprintf(fname, "%d", tim);
+	sprintf(fname, "%d", (int)tim);
 
 	ptr = (gchar*)gtk_entry_get_text(GTK_ENTRY(blog_title));
 	std::string title_text = ptr ? ptr : "";
@@ -5754,11 +5754,11 @@ int main(int argc, char* argv[])
 	GtkTooltips* tooltips;
 	GtkTargetList* targetlist;
 	GtkTargetEntry drag_types[] = {
-		{ "text/uri-list",	0, TARGET_URI_LIST },
-		{ "UTF8_STRING",	0, TARGET_UTF8_STRING },
-		{ "TEXT",			0, TARGET_TEXT },
-		{ "COMPOUND_TEXT",	0, TARGET_COMPOUND_TEXT },
-		{ "STRING",			0, TARGET_STRING },
+		{ (gchar*)"text/uri-list",	0, TARGET_URI_LIST },
+		{ (gchar*)"UTF8_STRING",	0, TARGET_UTF8_STRING },
+		{ (gchar*)"TEXT",			0, TARGET_TEXT },
+		{ (gchar*)"COMPOUND_TEXT",	0, TARGET_COMPOUND_TEXT },
+		{ (gchar*)"STRING",			0, TARGET_STRING },
 	};
 	gint n_drag_types = sizeof (drag_types) / sizeof (drag_types [0]);
 	GtkTextBuffer* buffer;

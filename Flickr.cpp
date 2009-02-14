@@ -6,6 +6,7 @@
 #include <curl/curl.h>
 #include <errno.h>
 #endif
+#include <string.h>
 #include <sys/stat.h>
 #include <time.h>
 

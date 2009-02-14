@@ -196,7 +196,7 @@ public:
 	ValueBinary getBinary() const {
 		return *(value.asBinary);
 	}
-	bool XmlRpcValue::hasMember(const tstring& name) const {
+	bool hasMember(const tstring& name) const {
 		return type == TypeStruct && value.asStruct->find(name) != value.asStruct->end();
 	}
 	std::vector<tstring> listMembers() const {
@@ -287,7 +287,7 @@ public:
 		type = TypeInvalid;
 		*this = rhs;
 	}
-	XmlRpcValue& XmlRpcValue::operator=(XmlRpcValue const& rhs) {
+	XmlRpcValue& operator=(XmlRpcValue const& rhs) {
 		if (this != &rhs) {
 			invalidate();
 			type = rhs.type;
@@ -329,7 +329,7 @@ public:
 		t1->tm_mon == t2->tm_mon && t1->tm_year == t2->tm_year;
 	}
 
-	bool XmlRpcValue::operator==(XmlRpcValue const& other) const
+	bool operator==(XmlRpcValue const& other) const
 	{
 		if (type != other.type)
 			return false;
@@ -366,7 +366,7 @@ public:
 		return true;
 	}
 
-	bool XmlRpcValue::operator!=(XmlRpcValue const& other) const
+	bool operator!=(XmlRpcValue const& other) const
 	{
 		return !(*this == other);
 	}
