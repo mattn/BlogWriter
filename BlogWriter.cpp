@@ -1861,7 +1861,7 @@ void on_menu_help(GtkWidget* widget, gpointer user_data)
 		g_free(utf8);
 		utf8 = NULL;
 	}
-	gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(dialog), "http://www.ac.cyberhome.ne.jp/~mattn/");
+	gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(dialog), "http://mattn.kaoriya.net/");
 	logo = gdk_pixbuf_new_from_file((module_path + "/logo.png").c_str(), NULL);
 	gtk_about_dialog_set_logo (GTK_ABOUT_DIALOG(dialog), logo);
 	gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER_ON_PARENT);

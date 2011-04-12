@@ -1628,10 +1628,12 @@ XmlRpcValue getXmlRpcValueFromXml(std::string& strXml) {
 		pDoc.CreateInstance(__uuidof(MSXML2::DOMDocument));
 		pDoc->async = FALSE;
 		pDoc->validateOnParse = TRUE;
-#if 1
-		FILE *fp = fopen("res.xml", "wb");
-		fprintf(fp, "%s\n", utf8_to_string(strXml).c_str());
-		fclose(fp);
+#ifdef _DEBUG
+		{
+			FILE *fp = fopen("res.xml", "wb");
+			fprintf(fp, "%s\n", utf8_to_string(strXml).c_str());
+			fclose(fp);
+		}
 #endif
 		BOOL ret = pDoc->loadXML(A2OLE(utf8_to_string(strXml).c_str()));
 #if 0
@@ -2223,10 +2225,12 @@ int postXmlRpc(tstring url, tstring userid, tstring passwd, tstring method, std:
 			responseXml = responseBuf;
 		else 
 			responseXml = getXmlFromException(XmlRpcException(res, curl_easy_strerror(res)));
-#if 1
-		FILE *fp = fopen("res.xml", "wb");
-		fprintf(fp, "%s\n", responseXml.c_str());
-		fclose(fp);
+#ifdef _DEBUG
+		{
+			FILE *fp = fopen("res.xml", "wb");
+			fprintf(fp, "%s\n", responseXml.c_str());
+			fclose(fp);
+		}
 #endif
 	}
 	responseBuf = "";
